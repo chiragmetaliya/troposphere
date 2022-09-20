@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="/script.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <label for="feetypes" id="lblFeeTypes">Select Fee Type</label>
+            </td>
+            <td>
+                <select name="FeeTypes" id="feeTypes" onchange="fillNationality(this);">
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="nationality" id="lblNationality">Select Nationality</label>
+            </td>
+            <td>
+                <select name="Nationalities" id="nationalities" onchange="fillCourses(this);">
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="course" id="lblCourse">Select Course</label>
+            </td>
+            <td>
+                <select name="Courses" id="courses" onchange="fillLevels(this);">
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="level" id="lblLevel">Select Level</label>
+            </td>
+            <td>
+                <select name="Levels" id="levels" onchange="finalFees(this);">
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <label for="fee" id="lblFee">Fee</label>
+            </td>
+        </tr>
+
+    </table>
+</body>
+
+</html>
